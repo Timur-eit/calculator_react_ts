@@ -26,4 +26,11 @@ export function square(number: number): number | string {
     return Math.sqrt(number);
 }
 
+export function power(base: number, power: number): number | string {
+    if (base < 0) {
+        return ERROR;
+    }     
+    return Math.pow(base, power);
+}
+
 export const percentage = (number: number): number => number / 100;
